@@ -4,4 +4,8 @@ fetch("toteutus.JSON")
     .then(response => response.json())
     .then(data => {
         laatikko.innerHTML = data.nimi + "<br>Osallistujat: " + data.osallistujat;
+
+        for (var i = 0; i < data.nimet.length; i++) {
+            laatikko.innerHTML += data.nimet[i] + "<br>";
+        }
     });
