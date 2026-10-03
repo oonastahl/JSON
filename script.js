@@ -8,5 +8,5 @@ fetch("tietue.JSON")
     .then(response => response.json())
     .then(data => {
     console.log(data);
-    laatikko.innerHTML = data.otsikko + "<br>" + data.kuvaus + "<p><img src='" + data.kuva + "'></p>";
+    laatikko.innerHTML = data.otsikko + "<br>" + data.kuvaus + "<p><img src='" + data.kuva + "'></p>" + "<br>" + data.opintojakso.nimi;
     })
