@@ -3,9 +3,9 @@ const laatikko = document.getElementById("toteutus-data");
 fetch("toteutus.JSON")
     .then(response => response.json())
     .then(data => {
-        laatikko.innerHTML = data.nimi + "<br>" + "<br>Osallistujat: " + data.osallistujat + "<br>" + "<br>" + data.alku + "-" + data.loppu + "<br>";
+        laatikko.innerHTML = data.nimi + "<br>" + "<br>Osallistujat: " + data.osallistujat + "<br>" + "<br>" + data.alku + "-" + data.loppu + "<br>" + "<br>Kesto: " + data.kesto + " viikkoa" + "<br>";
 
         for (var i = 0; i < data.nimet.length; i++) {
-            laatikko.innerHTML += data.nimet[i] + "<br>" + "<br>Kesto: " + data.kesto + " viikkoa";
+            laatikko.innerHTML += data.nimet[i] + "<br>";
         }
     });
