@@ -6,6 +6,6 @@ fetch("toteutus.JSON")
         laatikko.innerHTML = data.nimi + "<br>" + "<br>Osallistujat: " + data.osallistujat + "<br>" + "<br>" + data.alku + "-" + data.loppu + "<br>" + "<br>Kesto: " + data.kesto + " viikkoa" + "<br>" + "<br>";
 
         for (var i = 0; i < data.nimet.length; i++) {
-            laatikko.innerHTML += data.nimet[i];
+            laatikko.innerHTML += data.nimet[i] + " ";
         }
     });
