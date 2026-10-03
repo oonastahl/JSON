@@ -1,0 +1,15 @@
+{
+    "nimi": "Digitekniikat",
+    "osallistujat": 5,
+    "nimet": [
+      "Oona",
+      "Emma",
+      "Aleksi",
+      "Ville",
+      "Sara"
+    ],
+    "alku": "13.1.2025",
+    "loppu": "14.3.2025",
+    "kesto": 8,
+    "kuva": "https://jaakkola.github.io/json/digi.JPG"
+}
