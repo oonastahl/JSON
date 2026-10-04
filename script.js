@@ -8,6 +8,7 @@ fetch("tietue.JSON")
         console.log(data);
         console.log(data.opintojakso.nimi);
 
+        // opintojakson tiedot
         laatikko.innerHTML =
             data.otsikko
             + "<br>"
@@ -21,9 +22,11 @@ fetch("tietue.JSON")
             + data.opintojakso.opintopisteet
             + "<br>";
 
+        //tekniikat
         for (var i = 0; i < data.tekniikat.length; i++) {
             laatikko.innerHTML +=
-                data.tekniikat[i].aihe
+                "<br>"
+                + data.tekniikat[i].aihe
                 + "<br>"
                 + "<a href='" + data.tekniikat[i].linkki + "'>"
                 + data.tekniikat[i].linkki
