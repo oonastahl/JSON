@@ -19,5 +19,9 @@ fetch("https://api.openweathermap.org/data/2.5/weather?id=658225&appid=665ecd56d
         + "<br>"
         + "Lämpötila: " + data.main.temp + " °C"
         + "<br>"
-        + "Tuuli: " + data.wind.speed + " m/s";
+        + "Tuuli: " + data.wind.speed + " m/s"
+        + "<br>"
+        + "<img src='https://openweathermap.org/img/wn/"
+        + data.weather[0].icon
+        + "@2x.png'>";
     });
