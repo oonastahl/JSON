@@ -4,8 +4,11 @@ fetch("https://api.openweathermap.org/data/2.5/weather?id=658225&appid=665ecd56d
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        //sään kuvaus
-        console.log(data.weather[0].description);
-
+        //säätiedot
+        "Sää: " + console.log(data.weather[0].description);
+        + "<br>"
+        + "Lämpötila: " + data.main.temp + " °C"
+        + "<br>"
+        + "Tuuli: " + data.wind.speed + " m/s";
         laatikko.innerHTML = data.weather[0].description;
     });
