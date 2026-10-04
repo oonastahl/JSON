@@ -14,13 +14,14 @@ function poke() {
         .then(function (responseJson) {
             pokekuva(responseJson);
         })
+        //jos pokemonia ei löydy
         .catch(function (error) {
             document.getElementById("nimi").innerHTML =
                 "<p>Tietoa ei pystytä hakemaan</p>";
         });
 }
 
-function pokekuva(obj) {
+function pokekuva(obj) { //kuva
 
     pokemon = obj;
 
@@ -34,16 +35,18 @@ function pokekuva(obj) {
 
     document.getElementById("pokemonName").value = "";
 
+    //näkyy haun jälkeen
     document.getElementById("kaanna").style.display = "block";
 }
 
-function kaanna() {
+function kaanna() { //pokemonin takakuva
 
     let pokeurl = pokemon.sprites.back_default;
 
     document.getElementById("kuva2").innerHTML =
         "<img src='" + pokeurl + "'>";
 
+    //ominaisuudet
     document.getElementById("ominaisuudet").innerHTML =
     "Korkeus: " + pokemon.height + "<br>"
     + "Paino: " + pokemon.weight + "<br>"
