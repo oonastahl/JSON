@@ -15,7 +15,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?id=658225&appid=665ecd56d
         "Sää kello " + kellonaika
         + "<br>"
         //säätiedot
-        "Sää: " + data.weather[0].description
+        + "Sää: " + data.weather[0].description
         + "<br>"
         + "Lämpötila: " + data.main.temp + " °C"
         + "<br>"
