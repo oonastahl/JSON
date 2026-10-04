@@ -2,16 +2,19 @@ const laatikko = document.getElementById("toteutus-data");
 
 fetch("toteutus.JSON")
     .then(response => response.json())
+    //nimi ja osallistujat
     .then(data => {
         laatikko.innerHTML = data.nimi
             + "<br><br>"
             + "Osallistujat: " + data.osallistujat
             + "<br><br>";
 
+        //nimet
         for (var i = 0; i < data.nimet.length; i++) {
             laatikko.innerHTML += data.nimet[i] + " ";
         }
 
+        //pvm ja kesto
         laatikko.innerHTML += "<br><br>"
             + data.alku + "-" + data.loppu
             + "<br><br>"
