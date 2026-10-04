@@ -1,5 +1,3 @@
-console.log("JavaScript toimii");
-
 const laatikko = document.getElementById("json-data");
 
 console.log(laatikko);
@@ -9,8 +7,14 @@ fetch("tietue.JSON")
     .then(data => {
     console.log(data);
     console.log(data.opintojakso.nimi);
-    laatikko.innerHTML = data.otsikko + "<br>" + data.kuvaus + "<p><img src='" + data.kuva + "'></p>" + "<br>" + data.opintojakso.nimi + "<br>" + data.opintojakso.tunnus + "<br>" + data.opintojakso.opintopisteet;
+    laatikko.innerHTML = data.otsikko + "<br>" 
+        + data.kuvaus + "<p><img src='" + data.kuva + "'></p>" + "<br>" 
+        + data.opintojakso.nimi + "<br>" 
+        + data.opintojakso.tunnus + "<br>" 
+        + data.opintojakso.opintopisteet + "<br>";
     for (var i = 0; i < data.tekniikat.length; i++) {
-        laatikko.innerHTML += data.tekniikat[i].aihe + "<br>" + "<a href=" + data.tekniikat[i].linkki + ">" + data.tekniikat[i].linkki + "</a>" + "<br>";
+        laatikko.innerHTML = data.tekniikat[i].aihe + "<br>" 
+            + "<a href=" + data.tekniikat[i].linkki + "<br>" 
+            + data.tekniikat[i].linkki + "</a>" + "<br>";
     }
     })
