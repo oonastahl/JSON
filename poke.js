@@ -3,16 +3,16 @@ let pokemon;
 
 function poke() {
 
-    const pokeName = document.getElementById("pokemonName").value.toLowerCase();
+    const pokeName = document.getElementById("pokemonName").value.toLowerCase(); //nimi pienillä kirjaimilla
 
     name = document.getElementById("pokemonName").value;
 
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`) 
         .then(function (response) {
             return response.json();
         })
-        .then(function (responseJson) {
-            pokekuva(responseJson);
+        .then(function (responseJson) { 
+            pokekuva(responseJson); //hakee kuvan
         })
         //jos pokemonia ei löydy
         .catch(function (error) {
