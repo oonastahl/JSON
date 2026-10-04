@@ -1,0 +1,11 @@
+/* Navigaation tyylit */
+.navbar {
+    background-color: #7392B7;
+}
+.navbar .nav-link {
+    color: #231613;
+}
+.navbar .nav-link:hover {
+    color: #D8E1E9;
+    text-decoration: underline;
+}
