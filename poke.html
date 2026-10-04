@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <!-- Navigaatio -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -42,15 +43,16 @@
         </nav>
     <main>
         <section id="poke">
+            <!-- Pokemonin hakukenttä -->
              <h1>Pokemon haku</h1>
                   <p>
                     <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
                     <button onclick="poke()">Hae</button><br>​
                     
                     <div id="nimi">Kirjoita laatikkoon Pokemonin nimi</div>​
-                    <div id="ominaisuudet"></div>
-                  <p id="kuva2"></p>​
-                    <button id="kaanna" onclick="kaanna()" style="display: none;">Käännä</button>
+                    <div id="ominaisuudet"></div> <!-- ominaisuudet -->
+                  <p id="kuva2"></p>​ <!-- kuva -->
+                    <button id="kaanna" onclick="kaanna()" style="display: none;">Käännä</button> <!-- käännä-nappi -->
                   </p>​
         </section>
     </main>
