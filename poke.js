@@ -46,6 +46,7 @@ function kaanna() {
 
     document.getElementById("ominaisuudet").innerHTML =
     "Korkeus: " + pokemon.height + "<br>"
-    + "Paino: " + pokemon.weight;
+    + "Paino: " + pokemon.weight + "<br>"
+    + "Tyyppi: " + pokemon.types[0].type.name;
 
 }
