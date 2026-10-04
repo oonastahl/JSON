@@ -13,7 +13,7 @@ fetch("tietue.JSON")
         + data.opintojakso.tunnus + "<br>" 
         + data.opintojakso.opintopisteet + "<br>";
     for (var i = 0; i < data.tekniikat.length; i++) {
-        laatikko.innerHTML = data.tekniikat[i].aihe + "<br>" 
+        laatikko.innerHTML += data.tekniikat[i].aihe + "<br>" 
             + "<a href=" + data.tekniikat[i].linkki + "<br>" 
             + data.tekniikat[i].linkki + "</a>" + "<br>";
     }
