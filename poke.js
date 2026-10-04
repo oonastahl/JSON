@@ -30,4 +30,6 @@ function pokekuva(obj) {
         "<b>" + name + "</b>";
 
     document.getElementById("pokemonName").value = "";
+
+    document.getElementById("kaanna").style.display = "block";
 }
